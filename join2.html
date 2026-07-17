@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Club | Shaheed Krishan Lal Yuva Club Barog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Club Logo">
+            <h2>Shaheed Krishan Lal Yuva Club Barog</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html" class="active">Join Club</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="page-banner">
+        <h1>Club Membership Form</h1>
+        <p>Become a Proud Member of Shaheed Krishan Lal Yuva Club</p>
+    </section>
+
+    <section class="form-section">
+
+        <form action="https://formspree.io/f/meewwkyp" method="POST" enctype="multipart/form-data">
+
+            <div class="input-box">
+                <label>Full Name *</label>
+                <input type="text" name="Full Name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Father's Name *</label>
+                <input type="text" name="Father Name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Date of Birth *</label>
+                <input type="date" name="DOB" required>
+            </div>
+
+            <div class="input-box">
+                <label>Gender *</label>
+                <select name="Gender" required>
+                    <option value="">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Mobile Number *</label>
+                <input type="tel" name="Mobile" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email *</label>
+                <input type="email" name="Email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Village *</label>
+                <input type="text" name="Village" required>
+            </div>
+
+            <div class="input-box">
+                <label>Address *</label>
+                <textarea name="Address" rows="4" required></textarea>
+            </div>
+
+            <div class="input-box">
+                <label>Occupation *</label>
+                <input type="text" name="Occupation" required>
+            </div>
+
+            <div class="input-box">
+                <label>Blood Group</label>
+                <select name="Blood Group">
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Aadhaar Number *</label>
+                <input type="text" name="Aadhaar" maxlength="12" required>
+            </div>
+
+            <div class="input-box">
+                <label>Upload Passport Size Photo *</label>
+                <input type="file" name="Photo" required>
+            </div>
+
+            <div class="input-box">
+                <label>Upload Aadhaar Card *</label>
+                <input type="file" name="Aadhaar File" required>
+            </div>
+
+            <div class="input-box">
+                <label>Upload Signature *</label>
+                <input type="file" name="Signature" required>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" required>
+                I agree to all Club Rules & Regulations.
+            </div>
+
+            <button type="submit" class="btn">
+                Submit Membership Form
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Shaheed Krishan Lal Yuva Club Barog</p>
+
+        <p>Made with ❤️ for Youth</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

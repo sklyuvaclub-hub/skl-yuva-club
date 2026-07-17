@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Club | Shaheed Krishan Lal Yuva Club Barog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Club Logo">
+            <h2>Shaheed Krishan Lal Yuva Club Barog</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html" class="active">Join Club</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="page-banner">
+        <h1>Join Our Club</h1>
+        <p>Become a Member of Shaheed Krishan Lal Yuva Club Barog</p>
+    </section>
+
+    <section class="form-section">
+
+        <form action="https://formspree.io/f/meewwkyp" method="POST">
+
+            <div class="input-box">
+                <label>Full Name *</label>
+                <input type="text" name="Full Name" placeholder="Enter Full Name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Mobile Number *</label>
+                <input type="tel" name="Mobile Number" placeholder="10 Digit Mobile Number" pattern="[0-9]{10}"
+                    maxlength="10" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address *</label>
+                <input type="email" name="Email" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="input-box">
+                <label>Gender *</label>
+                <select name="Gender" required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Age *</label>
+                <input type="number" name="Age" min="15" max="80" placeholder="Enter Age" required>
+            </div>
+
+            <div class="input-box">
+                <label>Village *</label>
+                <input type="text" name="Village" placeholder="Village Name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Occupation *</label>
+                <input type="text" name="Occupation" placeholder="Occupation" required>
+            </div>
+
+            <div class="input-box">
+                <label>Why do you want to join our club?</label>
+                <textarea name="Message" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" required>
+                    I agree to follow all Club Rules & Regulations.
+                </label>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-user-plus"></i>
+                Join Club
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Shaheed Krishan Lal Yuva Club Barog</p>
+
+        <p>Serving Society • Promoting Sports • Inspiring Youth</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
